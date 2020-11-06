@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/scanHardware"
+        android:layout_width="120dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="10dp"
+        android:layout_weight="1"
+        android:background="#393a3f"
+        android:drawablePadding="10dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textAllCaps="false"
+        android:text="@string/hardware_info"
+        android:textColor="#ffffff"
+        android:textSize="15sp"/>
+    <Button
+        android:id="@+id/elemanage"
+        android:layout_width="120dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="10dp"
+        android:layout_weight="1"
+        android:background="#393a3f"
+        android:drawablePadding="10dp"
+        android:paddingStart="10dp"
+        android:textAllCaps="false"
+        android:paddingEnd="10dp"
+        android:text="@string/elevator_info1"
+        android:textColor="#ffffff"
+        android:textSize="15sp"/>
+
+    <Button
+        android:id="@+id/wifisetting"
+        android:layout_width="120dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="10dp"
+        android:layout_weight="1"
+        android:background="#393a3f"
+        android:drawablePadding="10dp"
+        android:paddingStart="10dp"
+        android:textAllCaps="false"
+        android:paddingEnd="10dp"
+        android:text="@string/wifi_set"
+        android:textColor="#ffffff"
+        android:textSize="15sp"/>
+
+</LinearLayout>

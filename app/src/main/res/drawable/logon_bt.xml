@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item  android:state_pressed="false"  >
+        <!-- 按钮未点击-->
+        <shape >
+            <stroke android:color="@android:color/darker_gray"
+                android:width="2px" />
+            <solid android:color="@color/white" />
+
+            <corners android:radius="10dp" />
+
+            <padding
+                android:bottom="10dp"
+                android:left="10dp"
+                android:right="10dp"
+                android:top="10dp" />
+        </shape>
+    </item>
+    <item  android:state_pressed="true"  >
+        <!-- 按钮未点击-->
+        <shape >
+            <stroke android:color="@android:color/darker_gray"
+                android:width="2px" />
+            <solid android:color="@color/darkgray" />
+
+            <corners android:radius="10dp" />
+            <padding
+                android:bottom="10dp"
+                android:left="10dp"
+                android:right="10dp"
+                android:top="10dp" />
+        </shape>
+    </item>
+</selector>

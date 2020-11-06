@@ -1,0 +1,70 @@
+<resources>
+
+    <!-- 分割线_横向 -->
+    <style name="halving_line_crosswise">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/division_wire</item>
+    </style>
+
+    <!-- 报销简述 dialog -->
+    <!--<style name="DialogStyle" parent="@android:style/Theme.Dialog">-->
+    <!--<item name="android:windowBackground"> @android:color/transparent </item>-->
+    <!--<item name="android:backgroundDimEnabled">true</item>-->
+    <!--<item name="android:background">@android:color/transparent</item>-->
+    <!--&lt;!&ndash; 是否使用背景半透明 &ndash;&gt;-->
+    <!--</style>-->
+    <!-- 报销简述 dialog -->
+    <style name="DialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <!-- 分割线_横向_粗 -->
+    <style name="halving_line_crosswise_max">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/division_wire</item>
+    </style>
+    <!-- 分割线_纵向_粗 -->
+    <style name="halving_line_lengthways_max">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/division_wire</item>
+    </style>
+    <!-- XML LinearLayout页面样式 -->
+    <style name="XMLStyleLinearLayout">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:background">@color/app_color</item>
+        <item name="android:clipToPadding">true</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+
+    <!--&lt;!&ndash; Application theme. &ndash;&gt;-->
+    <!--<style name="AppTheme" parent="AppBaseTheme">-->
+    <!--&lt;!&ndash; All customizations that are NOT specific to a particular API-level can go here. &ndash;&gt;-->
+    <!--</style>-->
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+<!--    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">-->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>
+

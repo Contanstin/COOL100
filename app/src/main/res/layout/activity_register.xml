@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/above_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/white" >
+
+        <com.hpmt.cool100.widget.RequiredTextView
+            android:id="@+id/tx_hint2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:ems="5"
+            android:text="@string/login_name_username"
+            android:textColor="@color/text_gray"
+            android:textSize="15sp" />
+        <View
+            android:layout_width="1dip"
+            android:layout_height="20dp"
+            android:layout_marginTop="13dp"
+            android:layout_toRightOf="@+id/tx_hint2"
+            android:layout_marginLeft="0dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/darkgray"/>
+
+        <EditText
+            android:id="@+id/edt_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/tx_hint2"
+            android:background="@null"
+            android:cursorVisible="true"
+            android:ellipsize="end"
+            android:gravity="bottom"
+            android:hint="@string/login_name_hint1"
+            android:inputType="none"
+            android:maxLines="2"
+            android:textColor="@color/black"
+            android:textColorHint="@color/text_color_hint"
+            android:textCursorDrawable="@null"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/darkgray" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/tx_hint4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:ems="5"
+            android:text="@string/email_t"
+            android:textColor="@color/text_gray"
+            android:textSize="15sp" />
+        <View
+            android:layout_width="1dip"
+            android:layout_height="20dp"
+            android:layout_marginTop="13dp"
+            android:layout_toRightOf="@+id/tx_hint4"
+            android:layout_marginLeft="0dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/darkgray"/>
+        <EditText
+            android:id="@+id/edt_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/tx_hint4"
+            android:background="@null"
+            android:cursorVisible="true"
+            android:ellipsize="end"
+            android:gravity="bottom"
+            android:hint="@string/email_t_hint"
+            android:inputType="none"
+            android:maxLines="2"
+            android:textColor="@color/black"
+            android:textColorHint="@color/text_color_hint"
+            android:textCursorDrawable="@null"
+            android:textSize="15sp" />
+    </RelativeLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/darkgray" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/tx_hint8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:ems="5"
+            android:text="@string/contact_staff"
+            android:textColor="@color/text_gray"
+            android:textSize="15sp" />
+        <View
+            android:layout_width="1dip"
+            android:layout_height="20dp"
+            android:layout_marginTop="13dp"
+            android:layout_toRightOf="@+id/tx_hint8"
+            android:layout_marginLeft="0dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/darkgray"/>
+        <EditText
+            android:id="@+id/edt_8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/tx_hint8"
+            android:background="@null"
+            android:cursorVisible="true"
+            android:ellipsize="end"
+            android:gravity="bottom"
+            android:hint="@string/lianxi_t_hint"
+            android:inputType="none"
+            android:maxLines="2"
+            android:textColor="@color/black"
+            android:textColorHint="@color/text_color_hint"
+            android:textCursorDrawable="@null"
+            android:textSize="15sp" />
+    </RelativeLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/darkgray" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/white" >
+
+        <com.hpmt.cool100.widget.RequiredTextView
+            android:id="@+id/tx_hint5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:ems="5"
+            android:text="@string/iphone_t"
+            android:textColor="@color/text_gray"
+            android:textSize="15sp" />
+        <View
+            android:layout_width="1dip"
+            android:layout_height="20dp"
+            android:layout_marginTop="13dp"
+            android:layout_toRightOf="@+id/tx_hint5"
+            android:layout_marginLeft="0dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/darkgray"/>
+        <EditText
+            android:id="@+id/edt_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/tx_hint5"
+            android:background="@null"
+            android:cursorVisible="true"
+            android:ellipsize="end"
+            android:gravity="bottom"
+            android:hint="@string/iphone_t_hint"
+            android:maxLines="2"
+            android:textColor="@color/black"
+            android:textColorHint="@color/text_color_hint"
+            android:textCursorDrawable="@null"
+            android:textSize="15sp" />
+    </RelativeLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/darkgray" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/tx_hint6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:ems="5"
+            android:text="@string/address_t"
+            android:textColor="@color/text_gray"
+            android:textSize="15sp" />
+        <View
+            android:layout_width="1dip"
+            android:layout_height="20dp"
+            android:layout_marginTop="13dp"
+            android:layout_toRightOf="@+id/tx_hint6"
+            android:layout_marginLeft="0dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/darkgray"/>
+        <EditText
+            android:id="@+id/edt_6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/tx_hint6"
+            android:background="@null"
+            android:cursorVisible="true"
+            android:ellipsize="end"
+            android:gravity="bottom"
+            android:hint="@string/address_t_hint"
+            android:inputType="none"
+            android:maxLines="2"
+            android:textColor="@color/black"
+            android:textColorHint="@color/text_color_hint"
+            android:textCursorDrawable="@null"
+            android:textSize="15sp" />
+    </RelativeLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/darkgray" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/white" >
+
+        <com.hpmt.cool100.widget.RequiredTextView
+            android:id="@+id/tx_hint7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:ems="5"
+            android:text="@string/password_t"
+            android:textColor="@color/text_gray"
+            android:textSize="15sp" />
+        <View
+            android:layout_width="1dip"
+            android:layout_height="20dp"
+            android:layout_marginTop="13dp"
+            android:layout_toRightOf="@+id/tx_hint7"
+            android:layout_marginLeft="0dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/darkgray"/>
+        <EditText
+            android:id="@+id/edt_7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/tx_hint7"
+            android:background="@null"
+            android:cursorVisible="true"
+            android:ellipsize="end"
+            android:gravity="bottom"
+            android:hint="@string/password_t_hint"
+            android:inputType="textPassword"
+            android:maxLines="2"
+            android:textColor="@color/black"
+            android:textColorHint="@color/text_color_hint"
+            android:textCursorDrawable="@null"
+            android:textSize="15sp" />
+    </RelativeLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/darkgray" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/white" >
+
+        <com.hpmt.cool100.widget.RequiredTextView
+            android:id="@+id/txtR_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:ems="5"
+            android:text="@string/verificty_name"
+            android:textColor="@color/text_gray"
+            android:textSize="15sp" />
+        <View
+            android:layout_width="1dip"
+            android:layout_height="20dp"
+            android:layout_marginTop="13dp"
+            android:layout_toRightOf="@+id/txtR_3"
+            android:layout_marginLeft="0dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/darkgray"/>
+        <EditText
+            android:id="@+id/edt_R_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="90dp"
+            android:layout_toRightOf="@+id/txtR_3"
+            android:background="@null"
+            android:cursorVisible="true"
+            android:ellipsize="end"
+            android:gravity="bottom"
+            android:hint="@string/verificty_name_hint"
+            android:inputType="number"
+            android:maxLines="2"
+            android:textColor="@color/black"
+            android:textColorHint="@color/text_color_hint"
+            android:textCursorDrawable="@null"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btn_getRNum"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/getok"
+            android:text="@string/getnum_click_name"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textSize="13sp" />
+    </RelativeLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/darkgray" />
+    <Button
+        android:id="@+id/btn_commit"
+        android:layout_width="match_parent"
+        android:textAllCaps="false"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textSize="13sp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/logon_bt"
+        android:text="@string/submit_click_name"
+        android:textColor="@color/black" />
+
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:minWidth="260dip"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:orientation="vertical" >-->
+
+            <TextView
+                android:id="@+id/title_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="title"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+        <!--</LinearLayout>-->
+
+        <LinearLayout
+            android:id="@+id/content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <TextView
+                android:id="@+id/content_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.6"
+                android:text="content"
+                android:textColor="@color/text_3b"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/buttonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right" >
+
+            <LinearLayout
+                android:id="@+id/buttonLayout_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/negative_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ems="3"
+                    android:textAllCaps="false"
+                    android:text="@string/ok"
+                    android:background="@null"
+                    android:textColor="@color/blue"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/buttonLayout_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/positive_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:background="@null"
+                    android:ems="3"
+                    android:textAllCaps="false"
+                    android:text="@string/cancel"
+                    android:textColor="@color/blue"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

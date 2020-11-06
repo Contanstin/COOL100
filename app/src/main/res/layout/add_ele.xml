@@ -1,0 +1,2450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/above_title" />
+
+    <com.hpmt.cool100.widget.SlowScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@color/app_bg_color"
+            android:orientation="vertical"
+            android:scrollbars="vertical"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:background="@color/white">
+
+                <com.hpmt.cool100.widget.RequiredTextView
+                    android:id="@+id/tx_hint1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:ems="6"
+                    android:text="@string/eleid"
+                    android:textColor="@color/text_gray"
+                    android:textSize="15sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/tx_hint1"
+                    android:background="@color/darkgray"
+                    tools:ignore="RtlHardcoded" />
+
+                <EditText
+                    android:id="@+id/edt_f_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_toRightOf="@+id/tx_hint1"
+                    android:background="@null"
+                    android:cursorVisible="true"
+                    android:ellipsize="end"
+                    android:gravity="bottom"
+                    android:singleLine="true"
+                    android:hint="@string/eleid"
+
+                    android:maxLines="2"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/text_color_hint"
+                    android:textCursorDrawable="@null"
+                    android:textSize="15sp"
+                    tools:ignore="RtlHardcoded" />
+
+
+            </RelativeLayout>
+
+
+            
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white">
+
+                <com.hpmt.cool100.widget.RequiredTextView
+                    android:id="@+id/tx_hint2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:ems="6"
+                    android:text="@string/serial_num"
+                    android:textColor="@color/text_gray"
+                    android:textSize="15sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/tx_hint2"
+                    android:background="@color/darkgray"
+                    tools:ignore="RtlHardcoded" />
+
+                <EditText
+                    android:id="@+id/edt_f_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_toRightOf="@+id/tx_hint2"
+                    android:background="@null"
+                    android:cursorVisible="true"
+                    android:ellipsize="end"
+                    android:gravity="bottom"
+                    android:hint="@string/serial_num"
+                    android:maxLines="2"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/text_color_hint"
+                    android:textCursorDrawable="@null"
+                    android:textSize="15sp"
+                    tools:ignore="RtlHardcoded" />
+            </RelativeLayout>
+
+            
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/txt_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:ems="6"
+                    android:text="@string/ele_model"
+                    android:textColor="@color/text_gray"
+                    android:textSize="15sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/txt_3"
+                    android:background="@color/darkgray"
+                    tools:ignore="RtlHardcoded" />
+
+                <EditText
+                    android:id="@+id/edt_f_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_toRightOf="@+id/txt_3"
+                    android:background="@null"
+                    android:cursorVisible="true"
+                    android:ellipsize="end"
+                    android:gravity="bottom"
+                    android:hint="@string/ele_model"
+                    android:maxLines="2"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/text_color_hint"
+                    android:textCursorDrawable="@null"
+                    android:textSize="15sp"
+                    tools:ignore="RtlHardcoded" />
+
+
+            </RelativeLayout>
+
+            
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/txt_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:ems="6"
+                    android:text="@string/ele_type"
+                    android:textColor="@color/text_gray"
+                    android:textSize="15sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/txt_4"
+                    android:background="@color/darkgray"
+                    tools:ignore="RtlHardcoded" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@+id/txt_4"
+                    android:orientation="horizontal"
+                    tools:ignore="RtlHardcoded">
+
+                    <RadioButton
+                        android:id="@+id/eletype1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+
+                        android:checked="true"
+                        android:text="@string/elevator" />
+
+                    <RadioButton
+                        android:id="@+id/eletype2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/escalator" />
+                </RadioGroup>
+
+                <!--<EditText-->
+                <!--android:id="@+id/edt_f_4"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:layout_marginRight="90dp"-->
+                <!--android:layout_toRightOf="@+id/txt_4"-->
+                <!--android:background="@null"-->
+                <!--android:cursorVisible="true"-->
+                <!--android:ellipsize="end"-->
+                <!--android:gravity="bottom"-->
+                <!--android:hint="@string/ele_type"-->
+                <!---->
+                <!--android:maxLines="2"-->
+                <!--android:textColor="@color/black"-->
+                <!--android:textColorHint="@color/text_color_hint"-->
+                <!--android:textCursorDrawable="@null"-->
+                <!--android:textSize="15sp" />-->
+
+
+            </RelativeLayout>
+
+            
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/txt_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:ems="6"
+                    android:text="@string/f_s_d"
+                    android:textColor="@color/text_gray"
+                    android:textSize="15sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/txt_5"
+                    android:background="@color/darkgray"
+                    tools:ignore="RtlHardcoded" />
+
+                <EditText
+                    android:id="@+id/edt_f_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_toRightOf="@+id/txt_5"
+                    android:background="@null"
+                    android:cursorVisible="true"
+                    android:ellipsize="end"
+                    android:gravity="bottom"
+                    android:hint="@string/f_s_d"
+
+                    android:maxLines="2"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/text_color_hint"
+                    android:textCursorDrawable="@null"
+                    android:textSize="15sp"
+                    tools:ignore="RtlHardcoded" />
+
+
+            </RelativeLayout>
+
+            
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/txt_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:ems="6"
+                    android:text="@string/rated_load"
+                    android:textColor="@color/text_gray"
+                    android:textSize="15sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/txt_6"
+                    android:background="@color/darkgray"
+                    tools:ignore="RtlHardcoded" />
+
+                <EditText
+                    android:id="@+id/edt_f_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_toRightOf="@+id/txt_6"
+                    android:background="@null"
+                    android:cursorVisible="true"
+                    android:ellipsize="end"
+                    android:gravity="bottom"
+                    android:hint="@string/rated_load"
+
+                    android:maxLines="2"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/text_color_hint"
+                    android:textCursorDrawable="@null"
+                    android:textSize="15sp"
+                    tools:ignore="RtlHardcoded" />
+
+
+            </RelativeLayout>
+
+            
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/txt_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:ems="6"
+                    android:text="@string/rated_speed"
+                    android:textColor="@color/text_gray"
+                    android:textSize="15sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/txt_7"
+                    android:background="@color/darkgray"
+                    tools:ignore="RtlHardcoded" />
+
+                <EditText
+                    android:id="@+id/edt_f_7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_toRightOf="@+id/txt_7"
+                    android:background="@null"
+                    android:cursorVisible="true"
+                    android:ellipsize="end"
+                    android:gravity="bottom"
+                    android:hint="@string/rated_speed"
+
+                    android:maxLines="2"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/text_color_hint"
+                    android:textCursorDrawable="@null"
+                    android:textSize="15sp"
+                    tools:ignore="RtlHardcoded" />
+
+
+            </RelativeLayout>
+
+            
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/txt_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:ems="6"
+                    android:text="@string/phone_functions"
+                    android:textColor="@color/text_gray"
+                    android:textSize="15sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/txt_8"
+                    android:background="@color/darkgray"
+                    tools:ignore="RtlHardcoded" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@+id/txt_8"
+                    android:orientation="horizontal"
+                    tools:ignore="RtlHardcoded">
+
+                    <RadioButton
+                        android:id="@+id/yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+
+                        android:checked="true"
+                        android:text="@string/eleopen" />
+
+                    <RadioButton
+                        android:id="@+id/no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="40dp"
+                        android:text="@string/eleclose" />
+                </RadioGroup>
+
+
+            </RelativeLayout>
+
+            
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/txt_9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:ems="6"
+                    android:text="@string/sms_report"
+                    android:textColor="@color/text_gray"
+                    android:textSize="15sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/txt_9"
+                    android:background="@color/darkgray"
+                    tools:ignore="RtlHardcoded" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@+id/txt_9"
+                    android:orientation="horizontal"
+                    tools:ignore="RtlHardcoded">
+
+                    <RadioButton
+                        android:id="@+id/yes1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+
+                        android:checked="true"
+                        android:text="@string/eleopen" />
+
+                    <RadioButton
+                        android:id="@+id/no1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="40dp"
+                        android:text="@string/eleclose" />
+                </RadioGroup>
+
+
+            </RelativeLayout>
+
+            
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/txt_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:ems="6"
+                    android:text="@string/sms_relieve"
+                    android:textColor="@color/text_gray"
+                    android:textSize="15sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/txt_10"
+                    android:background="@color/darkgray"
+                    tools:ignore="RtlHardcoded" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@+id/txt_10"
+                    android:orientation="horizontal"
+                    tools:ignore="RtlHardcoded">
+
+                    <RadioButton
+                        android:id="@+id/yes2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+
+                        android:checked="true"
+                        android:text="@string/eleopen" />
+
+                    <RadioButton
+                        android:id="@+id/no2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="40dp"
+                        android:text="@string/eleclose" />
+                </RadioGroup>
+
+
+            </RelativeLayout>
+
+            
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/txt_11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:ems="6"
+                    android:text="@string/test_functions"
+                    android:textColor="@color/text_gray"
+                    android:textSize="15sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/txt_11"
+                    android:background="@color/darkgray"
+                    tools:ignore="RtlHardcoded" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@+id/txt_11"
+                    android:orientation="horizontal"
+                    tools:ignore="RtlHardcoded">
+
+                    <RadioButton
+                        android:id="@+id/yes3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+
+                        android:checked="true"
+                        android:text="@string/eleopen" />
+
+                    <RadioButton
+                        android:id="@+id/no3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="40dp"
+                        android:text="@string/eleclose" />
+                </RadioGroup>
+
+
+            </RelativeLayout>
+
+            
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/txt_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:ems="6"
+                    android:text="@string/language"
+                    android:textColor="@color/text_gray"
+                    android:textSize="15sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/txt_12"
+                    android:background="@color/darkgray"
+                    tools:ignore="RtlHardcoded" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@+id/txt_12"
+                    android:orientation="horizontal"
+                    tools:ignore="RtlHardcoded">
+
+                    <RadioButton
+                        android:id="@+id/china"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+
+                        android:checked="true"
+                        android:text="中文" />
+
+                    <RadioButton
+                        android:id="@+id/jian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:text="繁體" />
+
+                    <RadioButton
+                        android:id="@+id/english"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:text="English" />
+                </RadioGroup>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white">
+
+                <com.hpmt.cool100.widget.RequiredTextView
+                    android:id="@+id/txt_13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:ems="6"
+                    android:text="@string/hardware"
+                    android:textColor="@color/text_gray"
+                    android:textSize="15sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/txt_13"
+                    android:background="@color/darkgray"
+                    tools:ignore="RtlHardcoded" />
+
+                <TextView
+                    android:id="@+id/edt_f_13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_toRightOf="@+id/txt_13"
+                    android:background="@null"
+                    android:cursorVisible="true"
+                    android:ellipsize="end"
+                    android:gravity="bottom"
+                    android:hint="@string/hardware"
+                    android:maxLines="2"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/text_color_hint"
+                    android:textCursorDrawable="@null"
+                    android:textSize="15sp"
+                    tools:ignore="RtlHardcoded" />
+
+
+            </RelativeLayout>
+
+            
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/txt_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:ems="6"
+                    android:text="@string/hardware"
+                    android:textColor="@color/text_gray"
+                    android:textSize="15sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/txt_14"
+                    android:background="@color/darkgray"
+                    tools:ignore="RtlHardcoded" />
+
+                <EditText
+                    android:id="@+id/edt_f_14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="90dp"
+                    android:layout_toRightOf="@+id/txt_14"
+                    android:background="@null"
+                    android:cursorVisible="true"
+                    android:ellipsize="end"
+                    android:gravity="bottom"
+                    android:hint="@string/hardware"
+
+                    android:maxLines="2"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/text_color_hint"
+                    android:textCursorDrawable="@null"
+                    android:textSize="15sp"
+                    tools:ignore="RtlHardcoded" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dip"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/addhardware"
+                    android:textAllCaps="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/addselect" />
+                <Button
+                android:id="@+id/addhardware1"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/add"
+                android:layout_weight="1"
+                />
+                <Button
+                    android:id="@+id/addhardware2"
+                    android:textAllCaps="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/refresh" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/txt_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:ems="6"
+                    android:text="@string/building_name"
+                    android:textColor="@color/text_gray"
+                    android:textSize="15sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/txt_15"
+                    android:background="@color/darkgray"
+                    tools:ignore="RtlHardcoded" />
+
+                <TextView
+                    android:id="@+id/edt_f_15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_toRightOf="@+id/txt_15"
+                    android:background="@null"
+                    android:cursorVisible="true"
+                    android:ellipsize="end"
+                    android:gravity="bottom"
+                    android:hint="@string/building_name"
+                    android:maxLines="2"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/text_color_hint"
+                    android:textCursorDrawable="@null"
+                    android:textSize="15sp"
+                    tools:ignore="RtlHardcoded" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dip"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/addbuild"
+                    android:textAllCaps="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/addselect" />
+
+                <Button
+                    android:id="@+id/addbuild1"
+                    android:textAllCaps="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/add"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@+id/addbuild2"
+                    android:textAllCaps="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/refresh" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/txt_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:ems="6"
+                    android:text="@string/manufacturer"
+                    android:textColor="@color/text_gray"
+                    android:textSize="15sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/txt_16"
+                    android:background="@color/darkgray"
+                    tools:ignore="RtlHardcoded" />
+
+                <TextView
+                    android:id="@+id/edt_f_16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_toRightOf="@+id/txt_16"
+                    android:background="@null"
+                    android:cursorVisible="true"
+                    android:ellipsize="end"
+                    android:gravity="bottom"
+                    android:hint="@string/manufacturer"
+                    android:maxLines="2"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/text_color_hint"
+                    android:textCursorDrawable="@null"
+                    android:textSize="15sp"
+                    tools:ignore="RtlHardcoded" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dip"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/madeUnit"
+                    android:layout_width="match_parent"
+                    android:textAllCaps="false"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/addselect" />
+
+                <Button
+                    android:id="@+id/madeUnit1"
+                    android:textAllCaps="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/add" />
+
+                <Button
+                    android:id="@+id/madeUnit2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:layout_weight="1"
+                    android:text="@string/refresh" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/txt_17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:ems="6"
+                    android:text="@string/user_unit"
+                    android:textColor="@color/text_gray"
+                    android:textSize="15sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/txt_17"
+                    android:background="@color/darkgray"
+                    tools:ignore="RtlHardcoded" />
+
+                <TextView
+                    android:id="@+id/edt_f_17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_toRightOf="@+id/txt_17"
+                    android:background="@null"
+                    android:cursorVisible="true"
+                    android:ellipsize="end"
+                    android:gravity="bottom"
+                    android:hint="@string/user_unit"
+                    android:maxLines="2"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/text_color_hint"
+                    android:textCursorDrawable="@null"
+                    android:textSize="15sp"
+                    tools:ignore="RtlHardcoded" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dip"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/useUnit"
+                    android:layout_width="match_parent"
+                    android:textAllCaps="false"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/addselect" />
+
+                <Button
+                    android:id="@+id/useUnit1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:layout_weight="1"
+                    android:text="@string/add" />
+
+                <Button
+                    android:id="@+id/useUnit2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:layout_weight="1"
+                    android:text="@string/refresh" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/txt_18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:ems="6"
+                    android:text="@string/installation_unit"
+                    android:textColor="@color/text_gray"
+                    android:textSize="15sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/txt_18"
+                    android:background="@color/darkgray"
+                    tools:ignore="RtlHardcoded" />
+
+                <TextView
+                    android:id="@+id/edt_f_18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_toRightOf="@+id/txt_18"
+                    android:background="@null"
+                    android:cursorVisible="true"
+                    android:ellipsize="end"
+                    android:gravity="bottom"
+                    android:hint="@string/installation_unit"
+                    android:maxLines="2"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/text_color_hint"
+                    android:textCursorDrawable="@null"
+                    android:textSize="15sp"
+                    tools:ignore="RtlHardcoded" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dip"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/installUnit"
+                    android:textAllCaps="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/addselect" />
+
+                <Button
+                    android:id="@+id/installUnit1"
+                    android:textAllCaps="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/add" />
+
+                <Button
+                    android:id="@+id/installUnit2"
+                    android:textAllCaps="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/refresh" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/txt_19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:ems="6"
+                    android:text="@string/duty_person"
+                    android:textColor="@color/text_gray"
+                    android:textSize="15sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/txt_19"
+                    android:background="@color/darkgray"
+                    tools:ignore="RtlHardcoded" />
+
+                <EditText
+                    android:id="@+id/edt_f_19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_toRightOf="@+id/txt_19"
+                    android:background="@null"
+                    android:cursorVisible="true"
+                    android:ellipsize="end"
+                    android:gravity="bottom"
+                    android:hint="@string/duty_person"
+                    android:maxLines="2"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/text_color_hint"
+                    android:textCursorDrawable="@null"
+                    android:textSize="15sp"
+                    tools:ignore="RtlHardcoded" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/txt_20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:ems="6"
+                    android:text="@string/installation_time"
+                    android:textColor="@color/text_gray"
+                    android:textSize="15sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/txt_20"
+                    android:background="@color/darkgray"
+                    tools:ignore="RtlHardcoded" />
+
+                <TextView
+                    android:id="@+id/edt_f_20"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/txt_20"
+                    android:background="@null"
+                    android:cursorVisible="true"
+                    android:ellipsize="end"
+                    android:gravity="bottom"
+                    android:hint="@string/installation_time"
+                    android:maxLines="2"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/text_color_hint"
+                    android:textCursorDrawable="@null"
+                    android:textSize="15sp"
+                    tools:ignore="RtlHardcoded" />
+                <ImageButton
+                    android:id="@+id/installDate"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/edt_f_20"
+                    android:background="@drawable/time"
+                    android:cursorVisible="true"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+
+                    android:maxLines="2"
+                    android:textColor="@color/white"
+                    android:textCursorDrawable="@null"
+                    android:textSize="15sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <ImageButton
+                    android:id="@+id/resetinstallDate"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/installDate"
+                    android:background="@drawable/clear"
+                    android:cursorVisible="true"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+
+                    android:maxLines="2"
+                    android:textColor="@color/white"
+                    android:textCursorDrawable="@null"
+                    android:textSize="15sp"
+                    tools:ignore="RtlHardcoded" />
+
+
+            </RelativeLayout>
+
+            
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/txt_21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:ems="6"
+                    android:text="@string/property_unit"
+                    android:textColor="@color/text_gray"
+                    android:textSize="15sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/txt_21"
+                    android:background="@color/darkgray"
+                    tools:ignore="RtlHardcoded" />
+
+                <TextView
+                    android:id="@+id/edt_f_21"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_toRightOf="@+id/txt_21"
+                    android:background="@null"
+                    android:cursorVisible="true"
+                    android:ellipsize="end"
+                    android:gravity="bottom"
+                    android:hint="@string/property_unit"
+                    android:maxLines="2"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/text_color_hint"
+                    android:textCursorDrawable="@null"
+                    android:textSize="15sp"
+                    tools:ignore="RtlHardcoded" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dip"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/propertyUnit"
+                    android:layout_width="match_parent"
+                    android:textAllCaps="false"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/addselect" />
+
+                <Button
+                    android:id="@+id/propertyUnit1"
+                    android:textAllCaps="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/add" />
+
+                <Button
+                    android:id="@+id/propertyUnit2"
+                    android:textAllCaps="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/refresh" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/change"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:ems="6"
+                    android:text="@string/modernization_unit"
+                    android:textColor="@color/text_gray"
+                    android:textSize="15sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/change"
+                    android:background="@color/darkgray"
+                    tools:ignore="RtlHardcoded" />
+
+                <TextView
+                    android:id="@+id/change_f"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_toRightOf="@+id/change"
+                    android:background="@null"
+                    android:cursorVisible="true"
+                    android:ellipsize="end"
+                    android:gravity="bottom"
+                    android:hint="@string/modernization_unit"
+
+                    android:maxLines="2"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/text_color_hint"
+                    android:textCursorDrawable="@null"
+                    android:textSize="15sp"
+                    tools:ignore="RtlHardcoded" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dip"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/renovationUnit"
+                    android:textAllCaps="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/addselect" />
+
+                <Button
+                    android:id="@+id/renovationUnit1"
+                    android:textAllCaps="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/add" />
+
+                <Button
+                    android:id="@+id/renovationUnit2"
+                    android:textAllCaps="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/refresh" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/txt_22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:ems="6"
+                    android:text="@string/duty_person1"
+                    android:textColor="@color/text_gray"
+                    android:textSize="15sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/txt_22"
+                    android:background="@color/darkgray"
+                    tools:ignore="RtlHardcoded" />
+
+                <EditText
+                    android:id="@+id/edt_f_22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_toRightOf="@+id/txt_22"
+                    android:background="@null"
+                    android:cursorVisible="true"
+                    android:ellipsize="end"
+                    android:gravity="bottom"
+                    android:hint="@string/duty_person1"
+                    android:maxLines="2"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/text_color_hint"
+                    android:textCursorDrawable="@null"
+                    android:textSize="15sp"
+                    tools:ignore="RtlHardcoded" />
+
+            </RelativeLayout>
+
+            
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/txt_23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:ems="6"
+                    android:text="@string/modernization_date"
+                    android:textColor="@color/text_gray"
+                    android:textSize="15sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/txt_23"
+                    android:background="@color/darkgray"
+                    tools:ignore="RtlHardcoded" />
+
+                <TextView
+                    android:id="@+id/edt_f_23"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/txt_23"
+                    android:background="@null"
+                    android:cursorVisible="true"
+                    android:ellipsize="end"
+                    android:gravity="bottom"
+                    android:hint="@string/modernization_date"
+
+                    android:maxLines="2"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/text_color_hint"
+                    android:textCursorDrawable="@null"
+                    android:textSize="15sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <ImageButton
+                    android:id="@+id/renovationDate"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/edt_f_23"
+                    android:background="@drawable/time"
+                    android:cursorVisible="true"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+
+                    android:maxLines="2"
+                    android:textColor="@color/white"
+                    android:textCursorDrawable="@null"
+                    android:textSize="15sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <ImageButton
+                    android:id="@+id/resetrenovationDate"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/renovationDate"
+                    android:background="@drawable/clear"
+                    android:cursorVisible="true"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+
+                    android:maxLines="2"
+                    android:textColor="@color/white"
+                    android:textCursorDrawable="@null"
+                    android:textSize="15sp"
+                    tools:ignore="RtlHardcoded" />
+
+
+
+            </RelativeLayout>
+
+            
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/txt_24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:ems="6"
+                    android:text="@string/maintenance_unit"
+                    android:textColor="@color/text_gray"
+                    android:textSize="15sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/txt_24"
+                    android:background="@color/darkgray"
+                    tools:ignore="RtlHardcoded" />
+
+                <TextView
+                    android:id="@+id/edt_f_24"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_toRightOf="@+id/txt_24"
+                    android:background="@null"
+                    android:cursorVisible="true"
+                    android:ellipsize="end"
+                    android:gravity="bottom"
+                    android:hint="@string/maintenance_unit"
+
+                    android:maxLines="2"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/text_color_hint"
+                    android:textCursorDrawable="@null"
+                    android:textSize="15sp"
+                    tools:ignore="RtlHardcoded" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dip"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/maintainUnit"
+                    android:textAllCaps="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/addselect" />
+
+                <Button
+                    android:id="@+id/maintainUnit1"
+                    android:textAllCaps="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/add" />
+
+                <Button
+                    android:id="@+id/maintainUnit2"
+                    android:textAllCaps="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/refresh" />
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/txt_25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:ems="6"
+                    android:text="@string/maintenance_personnel_1"
+                    android:textColor="@color/text_gray"
+                    android:textSize="15sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/txt_25"
+                    android:background="@color/darkgray"
+                    tools:ignore="RtlHardcoded" />
+
+                <TextView
+                    android:id="@+id/edt_f_25"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_toRightOf="@+id/txt_25"
+                    android:background="@null"
+                    android:cursorVisible="true"
+                    android:ellipsize="end"
+                    android:gravity="bottom"
+                    android:hint="@string/maintenance_personnel_1"
+
+                    android:maxLines="2"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/text_color_hint"
+                    android:textCursorDrawable="@null"
+                    android:textSize="15sp"
+                    tools:ignore="RtlHardcoded" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dip"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/addman1"
+                    android:textAllCaps="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/addselect" />
+
+                <Button
+                    android:id="@+id/addman11"
+                    android:layout_width="match_parent"
+                    android:textAllCaps="false"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/add" />
+
+                <Button
+                    android:id="@+id/addman12"
+                    android:textAllCaps="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/refresh" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/txt_26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:ems="6"
+                    android:text="@string/maintenance_personnel_2"
+                    android:textColor="@color/text_gray"
+                    android:textSize="15sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/txt_26"
+                    android:background="@color/darkgray"
+                    tools:ignore="RtlHardcoded" />
+
+                <TextView
+                    android:id="@+id/edt_f_26"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_toRightOf="@+id/txt_26"
+                    android:background="@null"
+                    android:cursorVisible="true"
+                    android:ellipsize="end"
+                    android:gravity="bottom"
+                    android:hint="@string/maintenance_personnel_2"
+
+                    android:maxLines="2"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/text_color_hint"
+                    android:textCursorDrawable="@null"
+                    android:textSize="15sp"
+                    tools:ignore="RtlHardcoded" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dip"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/addman2"
+                    android:textAllCaps="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/addselect" />
+
+                <Button
+                    android:id="@+id/addman21"
+                    android:textAllCaps="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/add" />
+
+                <Button
+                    android:id="@+id/addman22"
+                    android:textAllCaps="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/refresh" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/txt_27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:ems="6"
+                    android:text="@string/maintenance_personnel_3"
+                    android:textColor="@color/text_gray"
+                    android:textSize="15sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/txt_27"
+                    android:background="@color/darkgray"
+                    tools:ignore="RtlHardcoded" />
+
+                <TextView
+                    android:id="@+id/edt_f_27"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_toRightOf="@+id/txt_27"
+                    android:background="@null"
+                    android:cursorVisible="true"
+                    android:ellipsize="end"
+                    android:gravity="bottom"
+                    android:hint="@string/maintenance_personnel_3"
+
+                    android:maxLines="2"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/text_color_hint"
+                    android:textCursorDrawable="@null"
+                    android:textSize="15sp"
+                    tools:ignore="RtlHardcoded" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dip"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/addman3"
+                    android:textAllCaps="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/addselect" />
+
+                <Button
+                    android:id="@+id/addman31"
+                    android:textAllCaps="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/add" />
+
+                <Button
+                    android:id="@+id/addman32"
+                    android:textAllCaps="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/refresh" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/txt_28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:ems="6"
+                    android:text="@string/service_personel_1"
+                    android:textColor="@color/text_gray"
+                    android:textSize="15sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/txt_28"
+                    android:background="@color/darkgray"
+                    tools:ignore="RtlHardcoded" />
+
+                <TextView
+                    android:id="@+id/edt_f_28"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_toRightOf="@+id/txt_28"
+                    android:background="@null"
+                    android:cursorVisible="true"
+                    android:ellipsize="end"
+                    android:gravity="bottom"
+                    android:hint="@string/service_personel_1"
+
+                    android:maxLines="2"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/text_color_hint"
+                    android:textCursorDrawable="@null"
+                    android:textSize="15sp"
+                    tools:ignore="RtlHardcoded" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dip"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/addmanage1"
+                    android:textAllCaps="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/addselect" />
+
+                <Button
+                    android:id="@+id/addmanage11"
+                    android:textAllCaps="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/add" />
+
+                <Button
+                    android:id="@+id/addmanage12"
+                    android:textAllCaps="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/refresh" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/txt_29"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:ems="6"
+                    android:text="@string/service_personel_2"
+                    android:textColor="@color/text_gray"
+                    android:textSize="15sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/txt_29"
+                    android:background="@color/darkgray"
+                    tools:ignore="RtlHardcoded" />
+
+                <TextView
+                    android:id="@+id/edt_f_29"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_toRightOf="@+id/txt_29"
+                    android:background="@null"
+                    android:cursorVisible="true"
+                    android:ellipsize="end"
+                    android:gravity="bottom"
+                    android:hint="@string/service_personel_2"
+
+                    android:maxLines="2"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/text_color_hint"
+                    android:textCursorDrawable="@null"
+                    android:textSize="15sp"
+                    tools:ignore="RtlHardcoded" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dip"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/addmanage2"
+                    android:textAllCaps="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/addselect" />
+
+                <Button
+                    android:id="@+id/addmanage21"
+                    android:textAllCaps="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/add" />
+
+                <Button
+                    android:id="@+id/addmanage22"
+                    android:textAllCaps="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/refresh" />
+            </LinearLayout>
+
+
+
+            <Button
+                android:id="@+id/btn_commit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="40dp"
+                android:textAllCaps="false"
+                android:background="@drawable/logon_bt"
+                android:text="@string/submit_click_name"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/registerId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="90dp"
+                android:background="@null"
+                android:cursorVisible="true"
+                android:ellipsize="end"
+                android:gravity="bottom"
+                android:hint="@string/service_personel_2"
+                android:maxLines="2"
+                android:textColor="@color/black"
+                android:textColorHint="@color/text_color_hint"
+                android:textCursorDrawable="@null"
+                android:textSize="15sp"
+                android:visibility="gone"
+                tools:ignore="RtlHardcoded" />
+
+            <EditText
+                android:id="@+id/accountId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="90dp"
+                android:background="@null"
+                android:cursorVisible="true"
+                android:ellipsize="end"
+                android:gravity="bottom"
+                android:hint="@string/service_personel_2"
+                android:visibility="gone"
+                android:maxLines="2"
+                android:textColor="@color/black"
+                android:textColorHint="@color/text_color_hint"
+                android:textCursorDrawable="@null"
+                android:textSize="15sp"
+                tools:ignore="RtlHardcoded" />
+
+            <EditText
+                android:id="@+id/elevactorId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="90dp"
+                android:background="@null"
+                android:cursorVisible="true"
+                android:ellipsize="end"
+                android:gravity="bottom"
+                android:hint="@string/service_personel_2"
+                android:visibility="gone"
+                android:maxLines="2"
+                android:textColor="@color/black"
+                android:textColorHint="@color/text_color_hint"
+                android:textCursorDrawable="@null"
+                android:textSize="15sp"
+                tools:ignore="RtlHardcoded" />
+
+            <EditText
+                android:id="@+id/buildingId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="90dp"
+                android:background="@null"
+                android:cursorVisible="true"
+                android:ellipsize="end"
+                android:gravity="bottom"
+                android:hint="@string/service_personel_2"
+                android:visibility="gone"
+                android:maxLines="2"
+                android:textColor="@color/black"
+                android:textColorHint="@color/text_color_hint"
+                android:textCursorDrawable="@null"
+                android:textSize="15sp"
+                tools:ignore="RtlHardcoded" />
+
+            <EditText
+                android:id="@+id/manufId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="90dp"
+                android:background="@null"
+                android:cursorVisible="true"
+                android:ellipsize="end"
+                android:gravity="bottom"
+                android:hint="@string/service_personel_2"
+                android:visibility="gone"
+                android:maxLines="2"
+                android:textColor="@color/black"
+                android:textColorHint="@color/text_color_hint"
+                android:textCursorDrawable="@null"
+                android:textSize="15sp"
+                tools:ignore="RtlHardcoded" />
+
+            <EditText
+                android:id="@+id/installId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="90dp"
+                android:background="@null"
+                android:cursorVisible="true"
+                android:ellipsize="end"
+                android:gravity="bottom"
+                android:hint="@string/service_personel_2"
+                android:visibility="gone"
+                android:maxLines="2"
+                android:textColor="@color/black"
+                android:textColorHint="@color/text_color_hint"
+                android:textCursorDrawable="@null"
+                android:textSize="15sp"
+                tools:ignore="RtlHardcoded" />
+
+            <EditText
+                android:id="@+id/maintainId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="90dp"
+                android:background="@null"
+                android:cursorVisible="true"
+                android:ellipsize="end"
+                android:gravity="bottom"
+                android:hint="@string/service_personel_2"
+                android:visibility="gone"
+                android:maxLines="2"
+                android:textColor="@color/black"
+                android:textColorHint="@color/text_color_hint"
+                android:textCursorDrawable="@null"
+                android:textSize="15sp"
+                tools:ignore="RtlHardcoded" />
+
+            <EditText
+                android:id="@+id/useId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="90dp"
+                android:background="@null"
+                android:cursorVisible="true"
+                android:ellipsize="end"
+                android:gravity="bottom"
+                android:hint="@string/service_personel_2"
+                android:visibility="gone"
+                android:maxLines="2"
+                android:textColor="@color/black"
+                android:textColorHint="@color/text_color_hint"
+                android:textCursorDrawable="@null"
+                android:textSize="15sp"
+                tools:ignore="RtlHardcoded" />
+
+            <EditText
+                android:id="@+id/propertyId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="90dp"
+                android:background="@null"
+                android:cursorVisible="true"
+                android:ellipsize="end"
+                android:gravity="bottom"
+                android:hint="@string/service_personel_2"
+                android:visibility="gone"
+                android:maxLines="2"
+                android:textColor="@color/black"
+                android:textColorHint="@color/text_color_hint"
+                android:textCursorDrawable="@null"
+                android:textSize="15sp"
+                tools:ignore="RtlHardcoded" />
+
+            <EditText
+                android:id="@+id/renovationId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="90dp"
+                android:background="@null"
+                android:cursorVisible="true"
+                android:ellipsize="end"
+                android:gravity="bottom"
+                android:hint="@string/service_personel_2"
+                android:visibility="gone"
+                android:maxLines="2"
+                android:textColor="@color/black"
+                android:textColorHint="@color/text_color_hint"
+                android:textCursorDrawable="@null"
+                android:textSize="15sp"
+                tools:ignore="RtlHardcoded" />
+
+
+            <EditText
+                android:id="@+id/man1Id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="90dp"
+                android:background="@null"
+                android:cursorVisible="true"
+                android:ellipsize="end"
+                android:gravity="bottom"
+                android:hint="@string/service_personel_2"
+                android:visibility="gone"
+                android:maxLines="2"
+                android:textColor="@color/black"
+                android:textColorHint="@color/text_color_hint"
+                android:textCursorDrawable="@null"
+                android:textSize="15sp"
+                tools:ignore="RtlHardcoded" />
+
+            <EditText
+                android:id="@+id/man2Id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="90dp"
+                android:background="@null"
+                android:cursorVisible="true"
+                android:ellipsize="end"
+                android:gravity="bottom"
+                android:hint="@string/service_personel_2"
+                android:visibility="gone"
+                android:maxLines="2"
+                android:textColor="@color/black"
+                android:textColorHint="@color/text_color_hint"
+                android:textCursorDrawable="@null"
+                android:textSize="15sp"
+                tools:ignore="RtlHardcoded" />
+
+            <EditText
+                android:id="@+id/man3Id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="90dp"
+                android:background="@null"
+                android:cursorVisible="true"
+                android:ellipsize="end"
+                android:gravity="bottom"
+                android:hint="@string/service_personel_2"
+                android:visibility="gone"
+                android:maxLines="2"
+                android:textColor="@color/black"
+                android:textColorHint="@color/text_color_hint"
+                android:textCursorDrawable="@null"
+                android:textSize="15sp"
+                tools:ignore="RtlHardcoded" />
+
+            <EditText
+                android:id="@+id/man4Id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="90dp"
+                android:background="@null"
+                android:cursorVisible="true"
+                android:ellipsize="end"
+                android:gravity="bottom"
+                android:hint="@string/service_personel_2"
+                android:visibility="gone"
+                android:maxLines="2"
+                android:textColor="@color/black"
+                android:textColorHint="@color/text_color_hint"
+                android:textCursorDrawable="@null"
+                android:textSize="15sp"
+                tools:ignore="RtlHardcoded" />
+
+            <EditText
+                android:id="@+id/man5Id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="90dp"
+                android:background="@null"
+                android:cursorVisible="true"
+                android:ellipsize="end"
+                android:gravity="bottom"
+                android:hint="@string/service_personel_2"
+                android:visibility="gone"
+                android:maxLines="2"
+                android:textColor="@color/black"
+                android:textColorHint="@color/text_color_hint"
+                android:textCursorDrawable="@null"
+                android:textSize="15sp"
+                tools:ignore="RtlHardcoded" />
+
+
+        </LinearLayout>
+
+    </com.hpmt.cool100.widget.SlowScrollView>
+
+
+
+</LinearLayout>

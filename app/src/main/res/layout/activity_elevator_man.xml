@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/above_title" />
+
+    <!--<ListView-->
+    <!--android:id="@+id/lv_left_menu"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:divider="@color/darkgray"-->
+    <!--android:dividerHeight="1dp"-->
+    <!--android:text="DrawerLayout"-->
+    <!--/>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#fff"
+        android:layout_gravity="start">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/darkgray" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <EditText
+                android:id="@+id/search"
+                android:layout_width="fill_parent"
+                android:layout_height="46dp"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:hint="@string/search_per"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColor="#3b3b3b"
+                android:textColorHint="@color/text_color_hint"
+                android:textSize="16sp"
+                />
+
+            <Button
+                android:id="@+id/searchdelete"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/delete_selector"
+                android:visibility="visible" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+
+            android:background="@color/white" >
+
+            <TextView
+                android:id="@+id/tx_hint2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:ems="7"
+                android:gravity="center"
+                android:text="@string/staff"
+                android:textAlignment="center"
+                android:textColor="@color/text_gray"
+                android:textSize="15sp" />
+            <View
+                android:layout_width="1dip"
+                android:layout_height="45dp"
+
+                android:layout_toRightOf="@+id/tx_hint2"
+                android:layout_marginLeft="0dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/darkgray"/>
+
+            <TextView
+                android:id="@+id/edt_2"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/tx_hint2"
+                android:background="@null"
+                android:cursorVisible="true"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:inputType="none"
+                android:maxLines="2"
+                android:textColor="@color/darkgray"
+                android:text="@string/Phone"
+                android:textCursorDrawable="@null"
+                android:textSize="15sp" />
+        </RelativeLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/darkgray" />
+
+        <ListView
+            android:id="@+id/lv_left_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/darkgray"
+            android:dividerHeight="1dp"
+
+            />
+    </LinearLayout>
+
+</LinearLayout>
