@@ -82,13 +82,21 @@
 
         <EditText
             android:id="@+id/apPasswordEdit"
-            android:layout_width="match_parent"
+            android:layout_width="250dp"
             android:layout_height="50dp"
             android:layout_marginLeft="10dp"
             android:hint="@string/password_t"
             android:background="@null"
             android:inputType="textPassword"
             android:singleLine="true" />
+        <ImageView
+            android:id="@+id/psw_hide"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:layout_toRightOf="@+id/apPasswordEdit"
+            />
     </LinearLayout>
 
     <LinearLayout

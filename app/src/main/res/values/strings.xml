@@ -495,6 +495,7 @@
     <string name="esptouch1_location_permission_message">On Android M or higher version, App can\'t get Wi-Fi connection information if you forbid Location permission.</string>
     <string name="esptouch1_configuring_message">Esptouch is configuring, please wait for a moment…</string>
     <string name="esptouch1_configure_wifi_change_message">Wi-Fi disconnected or changed</string>
+    <string name="esptouch1_configure_wifi_length">Please enter at least 8 characters</string>
     <string name="esptouch1_configure_result_failed">EspTouch failed</string>
     <string name="esptouch1_configure_result_failed_port">Create EspTouch task failed, the EspTouch port could be used by other thread</string>
     <string name="esptouch1_configure_result_success">EspTouch 完成</string>

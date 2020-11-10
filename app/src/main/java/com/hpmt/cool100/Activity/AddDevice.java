@@ -356,7 +356,7 @@ public class AddDevice extends BaseActivity implements View.OnClickListener {
                 Type=5;
                 text4.setText("");
                 text5.setText("");
-                JsonUtils.EditTextEnable(false,text1);
+                JsonUtils.EditTextEnable(true,text1);
                 mac.setVisibility(View.GONE);
                 // imsi.setVisibility(View.GONE);
 

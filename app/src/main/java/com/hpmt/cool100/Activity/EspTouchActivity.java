@@ -10,10 +10,14 @@ import android.content.pm.PackageManager;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
+import android.text.method.HideReturnsTransformationMethod;
+import android.text.method.PasswordTransformationMethod;
+import android.text.method.TransformationMethod;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -44,6 +48,10 @@ public class EspTouchActivity extends EspTouchActivityAbs implements View.OnClic
     private EsptouchAsyncTask4 mTask;
     private ImageButton imgBtn_back;// 返回按钮
 
+    private boolean hide = true;//密码是否为隐藏
+    private ImageView psw_hide;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -57,15 +65,20 @@ public class EspTouchActivity extends EspTouchActivityAbs implements View.OnClic
         mViewModel.messageView = findViewById(R.id.messageView);
         mViewModel.confirmBtn = findViewById(R.id.confirmBtn);
         mViewModel.confirmBtn.setOnClickListener(v -> executeEsptouch());
+
         imgBtn_back = (ImageButton) findViewById(R.id.left_imgBtn);
         imgBtn_back.setVisibility(View.VISIBLE);
         imgBtn_back.setOnClickListener(this);
+
+        psw_hide = findViewById(R.id.psw_hide);
+        psw_hide.setImageResource(R.drawable.psw_hide);
+        psw_hide.setOnClickListener(this);
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             String[] permissions = {Manifest.permission.ACCESS_FINE_LOCATION};
             requestPermissions(permissions, REQUEST_PERMISSION);
         }
-        LifecycleOwner s=this;
+        LifecycleOwner s = this;
         MyApplication.getInstance().observeBroadcast(this, broadcast -> {
             Log.d(TAG, "onCreate: Broadcast=" + broadcast);
             onWifiChanged();
@@ -148,18 +161,25 @@ public class EspTouchActivity extends EspTouchActivityAbs implements View.OnClic
         byte[] ssid = viewModel.ssidBytes == null ? ByteUtil.getBytesByString(viewModel.ssid)
                 : viewModel.ssidBytes;
         CharSequence pwdStr = mViewModel.apPasswordEdit.getText();
-        byte[] password = pwdStr == null ? null : ByteUtil.getBytesByString(pwdStr.toString());
-        byte[] bssid = TouchNetUtil.parseBssid2bytes(viewModel.bssid);
-        CharSequence devCountStr = mViewModel.deviceCountEdit.getText();
-        byte[] deviceCount = devCountStr == null ? new byte[0] : devCountStr.toString().getBytes();
-        byte[] broadcast = {(byte) (mViewModel.packageModeGroup.getCheckedRadioButtonId() == R.id.packageBroadcast
-                ? 1 : 0)};
+        if (pwdStr.length() < 8) {
+            new AlertDialog.Builder(EspTouchActivity.this)
+                    .setMessage(R.string.esptouch1_configure_wifi_length)
+                    .setNegativeButton(android.R.string.cancel, null)
+                    .show();
+        } else {
+            byte[] password = pwdStr == null ? null : ByteUtil.getBytesByString(pwdStr.toString());
+            byte[] bssid = TouchNetUtil.parseBssid2bytes(viewModel.bssid);
+            CharSequence devCountStr = mViewModel.deviceCountEdit.getText();
+            byte[] deviceCount = devCountStr == null ? new byte[0] : devCountStr.toString().getBytes();
+            byte[] broadcast = {(byte) (mViewModel.packageModeGroup.getCheckedRadioButtonId() == R.id.packageBroadcast
+                    ? 1 : 0)};
 
-        if (mTask != null) {
-            mTask.cancelEsptouch();
+            if (mTask != null) {
+                mTask.cancelEsptouch();
+            }
+            mTask = new EsptouchAsyncTask4(this);
+            mTask.execute(ssid, bssid, password, deviceCount, broadcast);
         }
-        mTask = new EsptouchAsyncTask4(this);
-        mTask.execute(ssid, bssid, password, deviceCount, broadcast);
     }
 
     @Override
@@ -170,6 +190,22 @@ public class EspTouchActivity extends EspTouchActivityAbs implements View.OnClic
                 Intent intent = new Intent();
                 setResult(18, intent);
                 finish();
+                break;
+            case R.id.psw_hide:
+                if (hide) {
+                    psw_hide.setImageResource(R.drawable.psw_nohide);
+                    HideReturnsTransformationMethod method = HideReturnsTransformationMethod.getInstance();
+                    mViewModel.apPasswordEdit.setTransformationMethod(method);
+                    hide = false;
+
+                } else {
+                    psw_hide.setImageResource(R.drawable.psw_hide);
+                    TransformationMethod method = PasswordTransformationMethod.getInstance();
+                    mViewModel.apPasswordEdit.setTransformationMethod(method);
+                    hide = true;
+                }
+                int index=mViewModel.apPasswordEdit.getText().toString().length();
+                mViewModel.apPasswordEdit.setSelection(index);
                 break;
             default:
                 break;
@@ -301,9 +337,10 @@ public class EspTouchActivity extends EspTouchActivityAbs implements View.OnClic
             mResultDialog.setCanceledOnTouchOutside(false);
         }
     }
+
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
-        if (keyCode == KeyEvent.KEYCODE_BACK){
+        if (keyCode == KeyEvent.KEYCODE_BACK) {
             Intent intent = new Intent();
             setResult(18, intent);
             finish();

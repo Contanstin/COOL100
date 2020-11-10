@@ -61,12 +61,12 @@
 
         <ImageButton
             android:id="@+id/scan"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="23dp"
+            android:layout_height="22dp"
 
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:layout_marginRight="20dp"
+            android:layout_marginRight="27dp"
             android:background="@drawable/san"
             android:visibility="visible" />
 
